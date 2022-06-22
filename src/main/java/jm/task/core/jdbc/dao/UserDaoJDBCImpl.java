@@ -13,7 +13,7 @@ import java.util.List;
 public class UserDaoJDBCImpl implements UserDao {
 
     //language=SQL
-    private final String SQL_CREATE_USERS_TABLE = "CREATE TABLE IF NOT EXISTS users (id BIGINT PRIMARY KEY AUTO_INCREMENT, first_name VARCHAR(50), last_name VARCHAR(50), age TINYINT)";
+    private final String SQL_CREATE_USERS_TABLE = "CREATE TABLE IF NOT EXISTS users (id BIGINT PRIMARY KEY AUTO_INCREMENT, first_name VARCHAR(50) NOT NULL, last_name VARCHAR(50) NOT NULL, age TINYINT NOT NULL)";
     //language=SQL
     private final String SQL_DROP_USERS_TABLE = "DROP TABLE IF EXISTS users";
     //language=SQL
