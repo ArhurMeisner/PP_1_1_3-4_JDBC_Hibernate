@@ -17,8 +17,8 @@ public class UserDaoHibernateImpl implements UserDao {
     //language=SQL
     private final String SQL_DROP_USERS_TABLE = "DROP TABLE IF EXISTS users";
 
-    SessionFactory sessionFactory = Util.getSessionFactory();
-    Transaction transaction = null;
+    private SessionFactory sessionFactory = Util.getSessionFactory();
+    private Transaction transaction = null;
 
     public UserDaoHibernateImpl() {
     }

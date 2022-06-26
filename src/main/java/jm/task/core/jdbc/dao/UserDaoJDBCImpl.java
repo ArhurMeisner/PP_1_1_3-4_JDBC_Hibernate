@@ -25,7 +25,7 @@ public class UserDaoJDBCImpl implements UserDao {
     //language=SQL
     private final String SQL_CLEAN_USERS_TABLE = "TRUNCATE TABLE users";
 
-    Connection connection = Util.getConnection();
+    private Connection connection = Util.getConnection();
 
     public UserDaoJDBCImpl() {
 
